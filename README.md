@@ -10,3 +10,9 @@ Ref
 ```
 curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" INSTALL_K3S_VERSION="v1.23.15+k3s1" INSTALL_K3S_EXEC="--disable=traefik" sh -
 ```
+
+Add additional IP's for generate the ssl
+
+```
+curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" INSTALL_K3S_VERSION="v1.23.15+k3s1" INSTALL_K3S_EXEC="--disable=traefik --tls-san 192.168.3.10" sh -
+```
